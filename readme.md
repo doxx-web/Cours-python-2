@@ -10,23 +10,27 @@ https://python.sdv.u-paris.fr/cours-python.pdf Gros cours python
 Les commandes Git les plus couramment utilisées sont :
 
 add : Ajouter le contenu d'un fichier à l'index
-bisect : Trouver par recherche dichotomique la modification ayant introduit un bug
+git add <fichier> (ou git add . pour tous les fichiers modifiés)
+
 branch : Lister, créer ou supprimer des branches
+
+git branch <nom_branche> (pour créer une branche)
+
 checkout : Extraire une branche ou des chemins de l'arborescence de travail
+
+git checkout <nom_branche> (pour changer de branche)
+
 clone : Cloner un dépôt dans un nouveau répertoire
+git clone <url_du_dépôt> (pour cloner un dépôt distant)
+
 commit : Enregistrer les modifications du dépôt
-diff : Afficher les différences entre les commits, entre un commit et l'arborescence de travail, etc.
-fetch : Télécharger des objets et des références depuis un autre dépôt
-grep : Afficher les lignes correspondant à un motif
+git commit -m "message" (pour enregistrer avec un message)
+
 init : Créer un dépôt Git vide ou réinitialiser un dépôt existant
-log : Afficher l'historique des commits
-merge : Fusionner deux historiques de développement ou plus
-mv : Déplacer ou renommer un fichier, un répertoire ou un lien symbolique
+git init (pour initialiser un dépôt)
+
 pull : Récupérer et fusionner avec un autre dépôt ou une branche locale
+git pull (pour récupérer et fusionner)
+
 push : Mettre à jour les références distantes ainsi que les objets associés
-rebase : Transférer les commits locaux vers la branche HEAD mise à jour
-reset : Réinitialiser la branche HEAD actuelle à l'état spécifié
-rm : Supprimer des fichiers de l'arborescence de travail et de l'index
-show : Afficher différents types d'objets
-status : Afficher l'état de l'arborescence de travail
-tag : Créer, lister, supprimer ou vérifier un objet étiquette signé avec GPG
+git push (pour envoyer les modifications)
